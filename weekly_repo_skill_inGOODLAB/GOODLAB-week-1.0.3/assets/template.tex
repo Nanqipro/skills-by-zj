@@ -1,0 +1,87 @@
+\documentclass{ctexart}
+\usepackage{listings}
+\usepackage{xcolor,subfig}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% 页面边距
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+
+% 代码样式
+\lstset{
+    basicstyle          =   \rmfamily,
+    keywordstyle        =   \bfseries,
+    commentstyle        =   \rmfamily\itshape,
+    stringstyle         =   \ttfamily,
+    flexiblecolumns,
+    numbers             =   left,
+    showspaces          =   false,
+    numberstyle         =   \zihao{-5}\ttfamily,
+    showstringspaces    =   false,
+    captionpos          =   t,
+    frame               =   lrtb,
+}
+
+% 分隔线命令
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+% hyperref 设置（避免中文书签乱码）
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    pdfencoding=auto,
+}
+
+% ——— 标题页信息（替换下方占位符）———
+{\fontfamily{cmr}\selectfont
+\title{
+        \normalsize \textsc{}
+        \\[2.0cm]
+        \HRule{0.5pt}\\
+        \LARGE \textbf{\uppercase{Weekly Report}}\\
+        \HRule{2pt} \\[0.5cm]
+        \normalsize \today \vspace*{5\baselineskip}
+}
+\date{}
+\author{
+        %%AUTHOR%%\\
+        %%INSTITUTION_1%%\\
+        %%INSTITUTION_2%%\\
+        %%INSTITUTION_3%%
+}
+}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+% ======================================================================
+% 第一部分：本周工作总结
+% ======================================================================
+\section{本周工作总结}
+
+%%SECTION1%%
+
+% ======================================================================
+% 第二部分：本周工作内容详情
+% ======================================================================
+\section{本周工作内容详情}
+
+%%SECTION2%%
+
+% ======================================================================
+% 第三部分：下周工作计划
+% ======================================================================
+\section{下周工作计划}
+
+%%SECTION3%%
+
+\end{document}
