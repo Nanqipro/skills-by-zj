@@ -1,0 +1,33 @@
+name: textbook-pipeline
+
+description: |
+  Refine and review textbook-style LaTeX documents.
+
+  Accept:
+  - .tex files
+  - pasted LaTeX source code
+
+  Output:
+  - refined.tex
+  - review_report.docx
+
+inputs:
+  - tex_source
+
+outputs:
+  - refined_tex
+  - review_report_docx
+
+steps:
+
+  - skill: textbook-editor
+    input:
+      tex_source: ${input.tex_source}
+
+  - skill: textbook-reviewer
+    input:
+      refined_tex: ${textbook-editor.refined_tex}
+
+final_output:
+  refined_tex: ${textbook-editor.refined_tex}
+  review_report_docx: ${textbook-reviewer.review_report_docx}

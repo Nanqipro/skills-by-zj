@@ -1,0 +1,10 @@
+name: textbook-reviewer
+
+description: |
+  Review textbook-style LaTeX documents and generate a Word review report.
+
+inputs:
+  - refined_tex
+
+outputs:
+  - review_report_docx

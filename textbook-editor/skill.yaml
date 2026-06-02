@@ -1,0 +1,12 @@
+name: textbook-editor
+
+description: |
+  Refine and normalize textbook-style LaTeX documents.
+  Preserve all knowledge content while improving style consistency,
+  readability, and LaTeX formatting.
+
+input:
+  tex_source
+
+output:
+  refined_tex
